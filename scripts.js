@@ -34,15 +34,17 @@ function changeCurrency() {
     const currencyImage = document.querySelector(".currency-image")
 
     if (currencySelect.value == "dolar") {
-        currencyName.innerHTML = "Dólar americano"
-        currencyImage.src = "./assets/dolar.png"
+        currencyName.innerHTML = "Dólar americano" // Troca o texto na parte de cima das bandeiras de acordo com o país selecionado
+        currencyImage.src = "./assets/dolar.png" // Troca a imagem das bandeiras de acordo com o país selecionado
     }
 
     if (currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
         currencyImage.src = "./assets/euro.png"
     }
+
+    convertValues() // Exibe o valor convertido para a moeda selecionado caso o usuário troque a moeda depois de inserir o valor
 }
 
-currencySelect.addEventListener("change", changeCurrency)
-convertButton.addEventListener("click", convertValues)
+currencySelect.addEventListener("change", changeCurrency) // Ao evento de click no campo de converter para, ele troca a bandeira, os textos e as moedas
+convertButton.addEventListener("click", convertValues) // Ao clicar no botão converter ele executa a função de conversão da moeda
