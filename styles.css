@@ -99,3 +99,18 @@ section {
     font-size: 20px;
     font-weight: 700;
 }
+
+@media (max-width: 62rem) {
+    .logo {
+        width: 13rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    body {
+        margin: 3rem auto;
+    }
+    .logo {
+        display: none;
+    }
+}
