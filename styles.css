@@ -113,4 +113,7 @@ section {
     .logo {
         display: none;
     }
+    main {
+        max-height: 100vh;
+    }
 }
